@@ -164,9 +164,14 @@ const deleteStudent = async (id) => {
 }
 
 module.exports = {
-    addTeacher,
-    readTeachers,
-    readTeacherInfo,
-    updateTeacher,
-    deleteTeacher
+addTeacher,
+readTeachers,
+readStudents,
+addStudent,
+deleteTeacher,
+deleteStudent,
+readStudentInfo,
+readTeacherInfo,
+updateStudent,
+updateTeacher
 };
