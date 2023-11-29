@@ -1,0 +1,6 @@
+fixture `Add to card`
+  .page(url);
+
+test('test', async t => {
+    await t.click('body');
+});

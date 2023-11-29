@@ -1,0 +1,2 @@
+set DEBUG=testcafe:*,hammerhead:*
+testcafe chrome index.js 2> testcafe.log
