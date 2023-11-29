@@ -1,8 +1,11 @@
 const server = require ("./server.js");
- const PORT = process.env.NODE_ENV === "test" ? 4401 : 8080;
+ const PORT = (process.env.NODE_ENV === "test")
+  {
   server.listen(PORT, () => { 
     console.log(
-      Capstone Project Backend is running on http://localhost:${PORT}
-      ); 
-    }); 
+      "Capstone Project Backend is running on http://localhost:4401"
+      );
+    });
+  }
+   
 
