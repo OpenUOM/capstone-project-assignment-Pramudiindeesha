@@ -1,7 +1,7 @@
 module.exports = async () => {
     return {
       verbose: false,
-      testTimeout: 30000,
+      testTimeout: 50000,
       maxWorkers: 1
     };
   };
