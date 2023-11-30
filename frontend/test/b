@@ -1,9 +1,0 @@
-I uploaded the demo to a [github repository](link). Follow the steps below to reproduce the issue:
-- Clone/download the repository.
-- Run the following commands:
-    yarn install
-    yarn webpack --mode development 
-- Start the web server: 
-    yarn serve dist 
-- Run the test:
-    yarn testcafe chrome tests/**/*.test.js
