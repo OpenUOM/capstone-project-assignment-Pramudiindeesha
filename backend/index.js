@@ -6,13 +6,15 @@ if(process.env.NODE_ENV === "test"){
       "Capstone Project Frontend is running on http://localhost:8080"
     );
   });
-}else{
-  
- const PORT = process.env.NODE_ENV === "test" ? 4401 : 8080;
-  server.listen(PORT, () => { 
+}
+else{  
+      (process.env.NODE_ENV === "test")
+      {
+  server.listen(4401, () => { 
     console.log(
-      "Capstone Project Backend is running on http://localhost:${PORT}"
+      "Capstone Project Backend is running on http://localhost:4401"
       ); 
-    }); 
-  }
+      }); 
+      };
+}
 
