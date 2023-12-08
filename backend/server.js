@@ -1,4 +1,4 @@
-const express = require("express");
+const express = require ("express");
 
 const {
   readTeachers,
@@ -12,10 +12,10 @@ const {
   updateStudent,
   updateTeacher,
   dbinitialize
-} = require("./database.js");
+} = require ("./database.js");
 
 const app = express();
-const bodyParser = require("body-parser");
+const bodyParser = require  ("body-parser");
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
@@ -58,7 +58,10 @@ app.post("/addTeacher", async function (req, res) {
 
 app.post("/editTeacher", async function (req, res) {
   let reqBody = req.body;
-  let data = await updateTeacher(reqBody.name, reqBody.age, reqBody.id);
+  console.log(
+    "Request received to update teacher. Req body: " + JSON.stringify(reqBody)
+  );
+  let data = await updateTeacher(reqBody.name,reqBody.age,reqBody.id);
 
   res.setHeader("Content-Type", "application/json");
   res.end(JSON.stringify(data));
@@ -126,10 +129,10 @@ app.post("/editStudent", async function (req, res) {
   console.log(
     "Request received to update Student. Req body: " + JSON.stringify(reqBody)
   );
-  let data = await updateStudent(reqBody.name, reqBody.age, reqBody.hometown, reqBody.id);
+  let data = await updateStudent(reqBody.name,reqBody.age,reqBody.hometown,reqBody.id);
 
   res.setHeader("Content-Type", "application/json");
   res.end(JSON.stringify(data));
 });
 
-module.exports = app;
+module.exports = app;
