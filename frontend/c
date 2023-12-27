@@ -1,0 +1,6 @@
+[HKEY_CLASSES_ROOT\Directory\Background\shell\wt]
+@="Windows terminal here"
+"Icon"="C:\\Users\\{YOUR_WINDOWS_USERNAME}\\AppData\\Local\\Microsoft\\WindowsApps\\{YOUR_ICONS_FOLDER}\\icon.ico"
+
+[HKEY_CLASSES_ROOT\Directory\Background\shell\wt\command]
+@="\"C:\\Users\\{YOUR_WINDOWS_USERNAME}\\AppData\\Local\\Microsoft\\WindowsApps\\wt.exe\""
